@@ -1,0 +1,8 @@
+student_id;date;planned_minutes;actual_minutes;completed
+101;1.15.2026;60;0;no
+101;1.16.2026;45;10;partial
+101;1.17.2026;60;0;no
+102;1.15.2026;60;70;yes
+102;1.16.2026;45;45;yes
+102;1.17.2026;60;59;partial
+103;1.27.2026;100;80;partial
