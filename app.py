@@ -10,13 +10,13 @@ st.caption("AI-powered early risk detection & micro-intervention system")
 # --- Downloadable Sample File ---
 df = pd.read_csv("student_activity.csv")
 
-st.subheader("Student Activity Data")
+st.subheader("Sample Data")
 st.dataframe(df)
 
 csv = df.to_csv(index=False).encode("utf-8")
 
 st.download_button(
-    label="Download student_activity.csv",
+    label="Download Sample Data",
     data=csv,
     file_name="student_activity.csv",
     mime="text/csv",
@@ -80,4 +80,5 @@ Data:
         #st.subheader("🧠 AI Output")
 
         #st.write(result)
+
 
