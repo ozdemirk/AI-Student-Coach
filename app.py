@@ -7,6 +7,21 @@ st.set_page_config(page_title="Academic Discipline Intelligence (Beta)", layout=
 st.title("🎓 Academic Discipline Intelligence (Beta)")
 st.caption("AI-powered early risk detection & micro-intervention system")
 
+# --- Downloadable Sample File ---
+df = pd.read_csv("student_activity.csv")
+
+st.subheader("Student Activity Data")
+st.dataframe(df)
+
+csv = df.to_csv(index=False).encode("utf-8")
+
+st.download_button(
+    label="Download student_activity.csv",
+    data=csv,
+    file_name="student_activity.csv",
+    mime="text/csv",
+)
+
 # --- Secret ---
 if "HUGGINGFACE_TOKEN" not in st.secrets:
     st.error("HUGGINGFACE_TOKEN not found in Streamlit secrets.")
@@ -65,3 +80,4 @@ Data:
         #st.subheader("🧠 AI Output")
 
         #st.write(result)
+
