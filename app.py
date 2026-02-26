@@ -56,6 +56,12 @@ Data:
             )
 
         result = response.choices[0].message.content
+        
+        # Next steps'ten sonra zorunlu satır kır
+        result = result.replace("Next steps:", "Next steps:\n\n")
 
-        st.subheader("🧠 AI Output")
-        st.write(result)
+        st.markdown(result)
+
+        #st.subheader("🧠 AI Output")
+
+        #st.write(result)
