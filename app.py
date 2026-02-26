@@ -2,6 +2,23 @@ import streamlit as st
 import pandas as pd
 from huggingface_hub import InferenceClient
 
+st.markdown("""
+<style>
+div.stDownloadButton > button {
+    background-color: #28a745;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 0.5em 1em;
+}
+
+div.stDownloadButton > button:hover {
+    background-color: #218838;
+    color: white;
+}
+</style>
+""", unsafe_allow_html=True)
+
 st.set_page_config(page_title="Academic Discipline Intelligence (Beta)", layout="wide")
 
 st.title("🎓 Academic Discipline Intelligence (Beta)")
@@ -80,6 +97,7 @@ Data:
         #st.subheader("🧠 AI Output")
 
         #st.write(result)
+
 
 
 
