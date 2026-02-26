@@ -8,10 +8,10 @@ st.title("🎓 Academic Discipline Intelligence (Beta)")
 st.caption("AI-powered early risk detection & micro-intervention system")
 
 # --- Downloadable Sample File ---
-df = pd.read_csv("student_activity.csv")
+#df = pd.read_csv("student_activity.csv")
 
-st.subheader("Sample Data")
-st.dataframe(df)
+#st.subheader("Sample Data")
+#st.dataframe(df)
 
 csv = df.to_csv(index=False).encode("utf-8")
 
@@ -80,5 +80,6 @@ Data:
         #st.subheader("🧠 AI Output")
 
         #st.write(result)
+
 
 
